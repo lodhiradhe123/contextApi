@@ -1,8 +1,13 @@
 import React from 'react'
+import UserDetails from './UserDetails'
 
 function User() {
   return (
-    <div>User</div>
+    <>
+    <UserDetails />
+   
+
+    </>
   )
 }
 

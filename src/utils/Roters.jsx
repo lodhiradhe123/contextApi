@@ -4,11 +4,11 @@ import Home from "../components/Home";
 import About from "../components/About";
 import User from "../components/User";
 
-function Roters() {
+function Roters({products}) {
   return (
     <Routes>
       <Route path="/" element={<Home />} />
-      <Route path="/user" element={<User />} />
+      <Route path="/user" element={<User products={products}/>} />
       <Route path="/about" element={<About />} />
     </Routes>
   );
