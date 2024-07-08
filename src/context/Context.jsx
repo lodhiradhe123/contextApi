@@ -11,19 +11,19 @@ function Context(props) {
       email: "radhe@gmail.com",
     },
     {
-      id: 1,
-      name: "radhe",
-      email: "radhe@gmail.com",
+      id: 2,
+      name: "ram",
+      email: "ram@gmail.com",
     },
     {
-      id: 1,
-      name: "radhe",
-      email: "radhe@gmail.com",
+      id: 3,
+      name: "ramuji",
+      email: "rmau@gmail.com",
     },
   ]);
-  console.log(props);
+//   console.log(props);
   return (
-    <UserContext.Provider value={[users,setUsers]}>
+    <UserContext.Provider value={{users,setUsers}}>
       {props.children}
     </UserContext.Provider>
   );
